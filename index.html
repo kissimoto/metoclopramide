@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metoclopramide Calculator</title>
+    <link href="vet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+        <h1>Metoclopramide (5 mg/ml)</h1>
+   
+    <div class='wrapper'>
+    <table>
+    <tbody>
+    <tr>
+        <td><label for=weight>Animal's weight in kg</label></td>
+        <td><input type=number  id=weight required value='' placeholder=kg></td>
+    </tr>  
+    <tr>
+        <td><label for=dose_rate>Enter Dose Rate</label></td>
+        <td><input type='number' id=dose_rate required value='' placeholder='mg/kg/day'/></td>
+    </tr>
+    <tr>
+        <td><label for=mlperhour>Fluid Rate ml/hr</label></td>
+        <td> <input type=number  id=mlperhour required value='' placeholder=ml/hr></td>
+    </tr>
+    <tr>
+        <td> <label for=bag_size>Fluid Bag Size</label></td>
+        <td><input type=number  id=bag_size required bag value='' placeholder=ml></td>
+    </tr>
+    
+<!-- <tr>
+<td><label for=drugconcentration>Drug dose</label></td>
+<td><input type='number'  id=drugconcentration required value='' placeholder='Drug concentration'/></td>
+</tr> -->
+        
+        <!-- <label for=draw_off>Remove and Replace</label>
+        <input type='number' id=draw_off required value='' placeholder='Draw off Drug'/> -->
+       
+<tr>
+        <td></td>
+<td><button onclick=process() id='submitbutton'>Calculate</button></td>   
+</tr>
+</tbody>
+</table> 
+<div id=result>
+</div>  
+<script src=vet.js></script>
+</body>
+</html>
