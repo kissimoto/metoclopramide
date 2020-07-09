@@ -29,17 +29,21 @@
     </tr>
     <tr>
         <td> <label for=bag_size>Fluid Bag Size (ml)</label></td>
-        <td><input type=number  id=bag_size required bag value='' placeholder=ml></td>
-    </tr>
-    
-       
+        <td><select id='bag_size'>
+            <option value='100'>100 ml</option>
+            <option value='250'>250 ml</option>
+            <option value='500'>500 ml</option>
+            <option value='1000'>1000 ml</option>
+        </select>
+    </tr>          
 <tr>
-        <td></td>
+        <td><button onclick="refresh()" id='refreshButton'>Reset Value</button></td>
 <td><button onclick=process() id='submitbutton'>Calculate</button></td>   
 </tr>
 </tbody>
 </table> 
 <div id=result>
+    <p id="error"></p>
 </div>  
 <script src=vet.js></script>
 </body>
